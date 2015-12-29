@@ -44,6 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data\MenueType.cs" />
+    <Compile Include="data\Movie.cs" />
+    <Compile Include="data\User.cs" />
+    <Compile Include="gui\TUI.cs" />
+    <Compile Include="interfaces\DataManagemet.cs" />
+    <Compile Include="interfaces\RequirementsDefinition.cs" />
+    <Compile Include="lib\Validator.cs" />
+    <Compile Include="logic\SortRequirementsDefinition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,13 +75,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="data\" />
-    <Folder Include="gui\" />
-    <Folder Include="interfaces\" />
-    <Folder Include="lib\" />
-    <Folder Include="logic\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

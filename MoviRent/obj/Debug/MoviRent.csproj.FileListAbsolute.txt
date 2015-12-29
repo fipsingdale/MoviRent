@@ -1,1 +1,2 @@
 c:\users\pkramer\documents\visual studio 2013\Projects\MoviRent\MoviRent\bin\Debug\MoviRent.exe.config
+C:\Users\Cele\Source\Repos\MoviRent\MoviRent\bin\Debug\MoviRent.exe.config
