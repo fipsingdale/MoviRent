@@ -16,9 +16,9 @@ namespace MoviRent.interfaces
         List<Movie> GetAllMovies();
         List<Movie> GetAllUnborrowedMovies();
         List<Movie> GetAllBorrowedMovies();
-        User GetSingleUser(int userId);
-        Movie GetSingleMovie(int movieId);
-        Movie GetSingleMovie(string title);
+        User GetSingleUser(String userId);
+        Movie GetSingleMovie(String movieId);
+        Movie GetSingleMovie(String title);
         void UpdateUser(User user);
         void UpdatetMovie(Movie movie);
         void DeleteUser(String userId);
