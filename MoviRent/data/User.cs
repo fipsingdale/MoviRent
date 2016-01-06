@@ -8,7 +8,7 @@ namespace MoviRent.data
 {
     public class User
     {
-        public int userId { get; set; }
+        public String userId { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
         public DateTime dateOfBirth { get; set; }

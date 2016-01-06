@@ -169,11 +169,11 @@ namespace MoviRent.gui
             {
                 if (menueType.Equals(MenueType.Movie))
                 {
-                    requirementsDefinition.GetMovieById(Int32.Parse(input));
+                    requirementsDefinition.GetMovieById(input);
                 }
                 else
                 {
-                    requirementsDefinition.GetUserById(Int32.Parse(input));
+                    requirementsDefinition.GetUserById(input);
                 }
             }
             RedirectMenue("x", menueType);

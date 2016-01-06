@@ -14,13 +14,13 @@ namespace MoviRent.interfaces
         List<Movie> GetAllMovies();
         List<Movie> GetAllUnborrowedMovies();
         List<Movie> GetAllBorrowedMovies();
-        Movie GetMovieById(int movieId);
+        Movie GetMovieById(String movieId);
         void CreateMovie(Movie movie);
         void UpdateMovie(Movie movie);
-        User GetUserById(int userId);
+        User GetUserById(String userId);
         void CreateUser(User user);
         void UpdateUser(User user);
-        void BorrowMovie(int userId, Movie movie);
+        void BorrowMovie(String userId, Movie movie);
         void ReturnBorrowedMovie(Movie movie);
         void DeleteUser(String userId);
         void DeleteMovie(String movieId);
