@@ -22,5 +22,7 @@ namespace MoviRent.interfaces
         void UpdateUser(User user);
         void BorrowMovie(int userId, Movie movie);
         void ReturnBorrowedMovie(Movie movie);
+        void DeleteUser(User user);
+        void DeleteMovie(Movie movie);
     }
 }

@@ -21,5 +21,7 @@ namespace MoviRent.interfaces
         Movie GetSingleMovie(string title);
         void UpdateUser(User user);
         void UpdatetMovie(Movie movie);
+        void DeleteUser(User user);
+        void DeleteMovie(Movie movie);
     }
 }

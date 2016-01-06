@@ -51,6 +51,7 @@
     <Compile Include="interfaces\DataManagemet.cs" />
     <Compile Include="interfaces\RequirementsDefinition.cs" />
     <Compile Include="lib\Validator.cs" />
+    <Compile Include="logic\Csv.cs" />
     <Compile Include="logic\SortRequirementsDefinition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -10,8 +10,6 @@ namespace MoviRent.lib
     {
         private readonly String[] validInputDisplayMenue = {"c", "d", "e", "s", "v", "q"};
         private readonly String[] validInputShowMenue = {"a", "b", "g", "l", "m", "u"};
-        public Validator();
-
 
         public bool valitadeInputFromSearchMenue(String input) {
             if (Int32.Parse(input) >= 0) {

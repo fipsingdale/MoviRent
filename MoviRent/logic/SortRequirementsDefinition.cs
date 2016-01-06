@@ -10,7 +10,7 @@ namespace MoviRent.logic
 {
     class SortRequirementsDefinition : RequirementsDefinition
     {
-        DataManagement dataManagement { get; set; }
+        public DataManagement dataManagement { get; set; }
 
         public SortRequirementsDefinition(DataManagement datamanagement)
         {
@@ -92,5 +92,14 @@ namespace MoviRent.logic
             {
                 dataManagement.UpdatetMovie(movie);
             }
+
+            public void DeleteUser(User user)
+            {
+                dataManagement.DeleteUser(user);
+            }
+          public void DeleteMovie(Movie movie)
+          {
+              dataManagement.DeleteMovie(movie);
+          }
     }
 }
