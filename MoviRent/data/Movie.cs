@@ -9,7 +9,7 @@ namespace MoviRent.data
     public class Movie
     {
         public string genre { get; set; }
-        public int id { get; set; }
+        public String id { get; set; }
         public string title { get; set; }
         public string description { get; set; }
         public string director { get; set; }
