@@ -23,10 +23,6 @@ namespace MoviRent.lib
             return !validInputShowMenue.Contains<String>(input);
         }
 
-        public bool valitadeInputFromDeleteMenue(String input) {
-            return false; //return !PLACEHOLDER.Contains<String>(input)
-        }
-
         public bool valitadeInputFromDisplayMenue(String input) {
             return !validInputDisplayMenue.Contains<String>(input);
         }

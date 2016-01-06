@@ -34,7 +34,7 @@ namespace MoviRent.gui
                 Console.WriteLine("Movie               (m)");
                 Console.WriteLine("User                (u)");
                 Console.WriteLine("-----------------------");
-                Console.WriteLine("Exit	            (q)");
+                Console.WriteLine("Back	            (b)");
                 Console.WriteLine("Chose and enter character");
                 Console.WriteLine("inside brackets and");
                 Console.WriteLine("confirm by using return");
@@ -48,6 +48,9 @@ namespace MoviRent.gui
                 else if (input.Equals("u"))
                 {
                     DisplayMenue(MenueType.User);
+                }
+                else if (input.Equals("b")) {
+                    DisplayStartMenue();
                 }
             } while (!input.Equals("q"));
         }
@@ -178,8 +181,26 @@ namespace MoviRent.gui
 
         private void DisplayEdit(MenueType menueType)
         {
-            // implement Update in the way of there changed something AND the return plus borrow step
-            throw new NotImplementedException();
+            Console.Clear();
+            Console.WriteLine(menueType.ToString() + "-Management TUI ");
+            Console.WriteLine("#######################");
+            if (menueType.Equals(MenueType.Movie))
+            {
+                Console.WriteLine("Edit Movie               (m)");
+            }
+            else
+            {
+                Console.WriteLine("Edit Use      (u)");
+                Console.WriteLine("Return borrowed Movie (r)");
+            }
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("Back             (b)");
+            Console.WriteLine("Chose and enter character");
+            Console.WriteLine("inside brackets and");
+            Console.WriteLine("confirm by using return");
+            PrintCursor();
+            input = Console.ReadLine();
+            input = input.ToLower();            
         }
 
         private void DisplayDelete(MenueType menueType)
