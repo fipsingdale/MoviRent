@@ -184,7 +184,21 @@ namespace MoviRent.gui
 
         private void DisplayDelete(MenueType menueType)
         {
-            throw new NotImplementedException();
+            Console.Clear();
+            Console.WriteLine(menueType.ToString() + "-Management TUI ");
+            Console.WriteLine("Enter "+menueType+" ID");
+            Console.WriteLine("and confirm by using return");
+            PrintCursor();
+            input = Console.ReadLine();
+            if (menueType.Equals(MenueType.Movie))
+            {
+                requirementsDefinition.DeleteMovie(input);
+            }
+            else
+            {
+                requirementsDefinition.DeleteUser(input);
+            }
+            RedirectMenue("x", menueType);
         }
 
         private void DisplayCreate(MenueType menueType)

@@ -93,13 +93,13 @@ namespace MoviRent.logic
                 dataManagement.UpdatetMovie(movie);
             }
 
-            public void DeleteUser(User user)
+            public void DeleteUser(String userId)
             {
-                dataManagement.DeleteUser(user);
+                dataManagement.DeleteUser(userId);
             }
-          public void DeleteMovie(Movie movie)
+          public void DeleteMovie(String movieId)
           {
-              dataManagement.DeleteMovie(movie);
+              dataManagement.DeleteMovie(movieId);
           }
     }
 }
