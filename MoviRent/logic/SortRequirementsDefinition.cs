@@ -53,7 +53,7 @@ namespace MoviRent.logic
                 return movies;
             }
 
-            public Movie GetMovieById(int movieId)
+            public Movie GetMovieById(String movieId)
             {
                 return dataManagement.GetSingleMovie(movieId);
             }
@@ -68,7 +68,7 @@ namespace MoviRent.logic
                 dataManagement.UpdatetMovie(movie);
             }
 
-            public User GetUserById(int userId)
+            public User GetUserById(String userId)
             {
                 return dataManagement.GetSingleUser(userId);
             }
@@ -83,7 +83,7 @@ namespace MoviRent.logic
                 dataManagement.UpdateUser(user);
             }
 
-            public void BorrowMovie(int userId, Movie movie)
+            public void BorrowMovie(String userId, Movie movie)
             {
                 dataManagement.UpdatetMovie(movie);
             }
